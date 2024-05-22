@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    background-image: url(../imagens/Meu\ site1.0.png);
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+   
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px; /* Ajuste o espaço entre as imagens conforme necessário */
+}
+
+main > div {
+    width: 100%; /* Isso garantirá que a div ocupe toda a coluna */
+}
+
+/* Para a última fileira com apenas duas imagens, você pode usar pseudo-seletores */
+main > div:nth-last-child(-n+2) {
+    grid-column: span 1; /* Isso fará com que as duas últimas divs ocupem duas colunas cada */
+}
+
+
+main > img {
+    width: 25%;
+    margin: 1%;
+}
+
