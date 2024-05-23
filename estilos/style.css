@@ -2,16 +2,51 @@
 
 * {
     font-family: Arial, Helvetica, sans-serif;
-}
-header {
-    background-image: url(../imagens/Meu\ site1.0.png);
-    width: 100%;
-    background-size: cover;
-    background-position: center;
+    max-width: 100%;
    
 }
 
+body, html{
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-image: url(../imagens/img-site.png);
+    width: 100%;
+    height: 150px;
+    margin: 0px;
+    background-size: cover;
+    background-position: top, right;
+    position: relative;
+   
+}
+
+header menu {
+    /* Isso move o menu para a parte inferior do cabeçalho */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+header menu > a {
+    /* Isso faz com que o conteúdo do menu seja alinhado à esquerda */
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+header > menu > a:hover {
+   
+    background-color: lightgray;
+    
+}
+
 main {
+    margin: 30px;
+    margin-top: 10px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px; /* Ajuste o espaço entre as imagens conforme necessário */
@@ -30,5 +65,13 @@ main > div:nth-last-child(-n+2) {
 main > img {
     width: 25%;
     margin: 1%;
+}
+
+footer > a > img {
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.504);
+    box-sizing: border-box;
 }
 
