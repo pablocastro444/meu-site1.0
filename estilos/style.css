@@ -67,11 +67,28 @@ main > img {
     margin: 1%;
 }
 
-footer > a > img {
-    width: 50px;
-    margin: 10px;
-    border-radius: 50%;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.504);
-    box-sizing: border-box;
+footer {
+    background-color: #f0f0f0; /* Cor de fundo do footer */
+    padding: 20px;
+    text-align: center;
 }
+
+.social-links {
+    display: flex;
+    justify-content: center; /* Alinha os itens horizontalmente */
+    align-items: center; /* Alinha os itens verticalmente */
+}
+
+.social-links a {
+    margin: 0 10px; /* Espaçamento entre os links */
+    text-decoration: none;
+}
+
+.social-links img {
+    width: 50px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+
 
